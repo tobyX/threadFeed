@@ -131,6 +131,6 @@ class FeedPost extends ViewablePost implements IFeedEntry
 	 */
 	public function getUsername()
 	{
-		$this->getDecoratedObject()->getUsername();
+		return $this->getDecoratedObject()->getUsername();
 	}
 }
