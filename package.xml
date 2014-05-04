@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE package SYSTEM "DTD/package.dtd">
+<package xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd"
+	name="com.toby.threadfeed">
+
+	<packageinformation>
+		<packageName><![CDATA[Themenfeeds]]></packageName>
+		<packageDescription><![CDATA[Stellt Themen als RSS-Feed zur Verfügung]]></packageDescription>
+		<version>1.0.0</version>
+		<date>2014-05-04</date>
+		<plugin>com.woltlab.wbb</plugin>
+	</packageinformation>
+
+	<authorinformation>
+		<author>Tobias Friebel</author>
+		<authorURL>http://tobyf.de/</authorURL>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="4.0.0">com.woltlab.wbb</requiredpackage>
+	</requiredpackages>
+
+	<instructions type="install">
+		<!-- files -->
+		<instruction type="file" application="wbb">files.tar</instruction>
+	</instructions>
+
+</package>
