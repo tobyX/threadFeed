@@ -25,7 +25,7 @@
 			<dc:creator><![CDATA[{@$item->getUsername()|escapeCDATA}]]></dc:creator>
 			<guid><![CDATA[{@$item->getLink()|escapeCDATA}]]></guid>
 			{hascontent}<content:encoded><![CDATA[{content}{@$item->getFormattedMessage()|escapeCDATA}{/content}]]></content:encoded>{/hascontent}
-			<enclosure url="{@$item->getUserAvatar()->getURL(96)}" length="-1" type="image/{@$item->getUserAvatar()->getURL()|substr:-3}" />
+			<enclosure url="{@$item->getUserAvatar()->getURL()}" length="-1" type="image/{@$item->getUserAvatar()->getURL()|substr:-3}" />
 		</item>
 {*		*}{/foreach}
 	</channel>
