@@ -7,8 +7,8 @@
 	<packageinformation>
 		<packageName><![CDATA[Themenfeeds]]></packageName>
 		<packageDescription><![CDATA[Stellt Themen als RSS-Feed zur Verfügung]]></packageDescription>
-		<version>1.0.0</version>
-		<date>2014-05-04</date>
+		<version>1.0.1</version>
+		<date>2014-09-02</date>
 		<plugin>com.woltlab.wbb</plugin>
 	</packageinformation>
 
@@ -24,6 +24,13 @@
 	<instructions type="install">
 		<!-- files -->
 		<instruction type="file" application="wbb">files.tar</instruction>
+		<instruction type="template" application="wbb">templates.tar</instruction>
+	</instructions>
+
+	<instructions type="update" fromversion="1.0.0">
+		<!-- files -->
+		<instruction type="file" application="wbb">files.tar</instruction>
+		<instruction type="template" application="wbb">templates.tar</instruction>
 	</instructions>
 
 </package>

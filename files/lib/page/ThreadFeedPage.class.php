@@ -8,6 +8,16 @@ use wbb\data\thread\ViewableThread;
 class ThreadFeedPage extends AbstractFeedPage
 {
 	/**
+	 * @see	\wcf\page\AbstractPage::$templateName
+	 */
+	public $templateName = 'rssFeedThread';
+
+	/**
+	 * @see	\wcf\page\AbstractFeedPage::$application
+	 */
+	public $application = 'wbb';
+
+	/**
 	 * offset for paginated calls
 	 *
 	 * @var	integer

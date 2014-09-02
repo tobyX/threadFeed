@@ -133,4 +133,12 @@ class FeedPost extends ViewablePost implements IFeedEntry
 	{
 		return $this->getDecoratedObject()->getUsername();
 	}
+
+	/**
+	 * Return author's avatar
+	 */
+	public function getUserAvatar()
+	{
+		return $this->getUserProfile()->getAvatar();
+	}
 }
